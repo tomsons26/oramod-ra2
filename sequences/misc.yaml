@@ -518,12 +518,12 @@ clustermissile:
 parach:
 	open:
 		Start: 0
-		Length: 5
+		Length: 10
 	idle:
-		Start: 5
-		Length: 11
+		Start: 19
+		Length: 20
 
 parach-shadow:
-	idle: parach
+	idle: null
 		Start: 0
 		Length: *

@@ -244,21 +244,20 @@ amradr:
 	RenderBuilding:
 		Image: gaairc
 #	ParatroopersPower: # TODO
-	ParatroopersPower:
-		OrderName: SovietParatroopers
+	ParatroopersPower@paratroopers:
+		OrderName: Paratroopers
 #		Prerequisites: ~structures.allies
 		Icon: paratroopers
 		ChargeTime: 360
 		Description: Paratroopers
 		LongDesc: A Badger drops a squad of infantry\nanywhere on the map.
-		DropItems: E1,E1,E1,E2,E2
-		SelectTargetSound: slcttgt1.aud
-		AllowImpassableCells: false
-		QuantizedFacings: 8
+		DropItems: E1,E1,E1,E2,E2,E1,E1,E1,E2,E2
+		SelectTargetSound: slcttgt1
+		AllowImpassableCells: true
+		QuantizedFacings: 32
 		CameraActor: camera.paradrop
 		DisplayBeacon: false
-		BeaconPoster: paraicon
-
+		UnitType: pdplane
 gaweap:
 	Inherits: ^Building
 	Buildable:

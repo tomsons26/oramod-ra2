@@ -402,3 +402,58 @@
 	Guardable:
 	UpgradeManager:
 	MustBeDestroyed:
+
+^Plane:
+	AppearsOnRadar:
+		UseLocation: true
+	SelectionDecorations:
+	Selectable:
+		Voice: GenericVoice
+	TargetableAircraft:
+		TargetTypes: Air
+		GroundedTargetTypes: Ground, Repair
+	HiddenUnderFog:
+	AttackMove:
+	Guard:
+	Guardable:
+	GainsExperience:
+	GivesExperience:
+	DrawLineToTarget:
+	ActorLostNotification:
+		Notification: AirUnitLost
+	ProximityCaptor:
+		Types: Plane
+	EjectOnDeath:
+		PilotActor: E1
+		SuccessRate: 50
+		EjectOnGround: false
+		EjectInAir: true
+		AllowUnsuitableCell: true
+	GivesBounty:
+	UpdatesPlayerStatistics:
+	CombatDebugOverlay:
+	BodyOrientation:
+	Tooltip:
+		GenericName: Plane
+	Huntable:
+	ScriptTriggers:
+	GainsStatUpgrades:
+	SelfHealing@ELITE:
+		Step: 2
+		Ticks: 100
+		HealIfBelow: 1
+		DamageCooldown: 125
+		UpgradeTypes: selfheal
+		UpgradeMinEnabledLevel: 1
+	UpgradeManager:
+	UpgradeOverlay@IRONCURTAIN:
+		UpgradeTypes: invulnerability
+		UpgradeMinEnabledLevel: 1
+	InvulnerabilityUpgrade@IRONCURTAIN:
+		UpgradeTypes: invulnerability
+		UpgradeMinEnabledLevel: 1
+		UpgradeMaxAcceptedLevel: 2
+	TimedUpgradeBar:
+		Upgrade: invulnerability
+	WithShadow:
+	MustBeDestroyed:
