@@ -193,6 +193,14 @@
 	Cloneable:
 		Types: infantry
 # TODO: Soylet (for grinding in cloning vats and YR)
+	Parachutable:
+		FallRate: 26
+		ParachuteOffset: 0,0,200
+		KilledOnImpassableTerrain: true
+		ParachuteSequence: parach
+		ShadowSequence: parach-shadow
+		GroundImpactSound: squishy2.aud
+		WaterImpactSound: splash9.aud
 
 ^CivilianInfantry:
 	Inherits: ^Infantry
@@ -346,3 +354,51 @@
 	BodyOrientation:
 	Tooltip:
 		Name: Tree
+		
+^Helicopter:
+	AppearsOnRadar:
+		UseLocation: yes
+	TargetableAircraft:
+		TargetTypes: Air
+		GroundedTargetTypes: Ground
+	SelectionDecorations:
+		Palette: pips
+	Selectable:
+		Voice: Heli
+	Helicopter:
+		RepairBuildings:
+		RearmBuildings:
+		LandWhenIdle: no
+	Buildable:
+		Queue: Aircraft
+	HiddenUnderFog:
+	AttackMove:
+	GainsExperience:
+		ChevronPalette: ra
+		Upgrades:
+			500: firepower, damage, speed, reload
+			1000: firepower, damage, speed, reload, selfheal, eliteweapon
+	GainsStatUpgrades:
+		FirepowerModifier: 110, 130
+		DamageModifier: 83, 66
+		SpeedModifier: 120, 150
+		ReloadModifier: 90, 75
+	SelfHealing@ELITE:
+		Step: 2
+		Ticks: 100
+		HealIfBelow: 1
+		DamageCooldown: 125
+		UpgradeTypes: selfheal
+		UpgradeMinEnabledLevel: 1
+	GivesExperience:
+	DrawLineToTarget:
+	ActorLostNotification:
+	CombatDebugOverlay:
+	BodyOrientation:
+		CameraPitch: 90
+	Huntable:
+	ScriptTriggers:
+	Guard:
+	Guardable:
+	UpgradeManager:
+	MustBeDestroyed:

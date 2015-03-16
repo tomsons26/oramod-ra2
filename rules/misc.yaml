@@ -21,3 +21,40 @@ waypoint:
 	RenderVoxels:
 		Image: amcv
 		Palette: colorpicker
+
+camera:
+	Immobile:
+		OccupiesSpace: false
+	Health:
+		HP: 1000
+	RevealsShroud:
+		Range: 10c0
+	ProximityCaptor:
+		Types: Camera
+	BodyOrientation:
+	DetectCloaked:
+		Range: 10
+		
+powerproxy.paratroopers:
+	ParatroopersPower:
+		Icon: paratroopers
+		Description: Paratroopers
+		LongDesc: A Badger drops a squad of infantry\nanywhere on the map.
+		DropItems: E1,E1,E1,E2,E2
+		SelectTargetSound: slcttgt1.aud
+		AllowImpassableCells: false
+		QuantizedFacings: 8
+		CameraActor: camera.paradrop
+		DisplayBeacon: false
+		BeaconPoster: paraicon
+
+camera.paradrop:
+	Immobile:
+		OccupiesSpace: false
+	Health:
+		HP: 1000
+	RevealsShroud:
+		Range: 6c0
+	ProximityCaptor:
+		Types: Camera
+	BodyOrientation:

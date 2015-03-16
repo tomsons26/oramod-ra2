@@ -250,6 +250,9 @@ explosion:
 	large_grey_explosion: xgrymed2
 		Start: 0
 		Length: *
+	nuke_explosion: nukeanim
+		Start: 0
+		Length: *
 
 discus:
 	idle:
@@ -499,3 +502,28 @@ craters: #TODO: make use of 07-12 as well
 icon:
 	gps: asaticon
 		Start: 0
+	clustermissile: nukeicon
+		Start: 0
+	paratroopers: paraicon
+		Start: 0
+
+clustermissile:
+	up: nkmslup
+		Start: 0
+		Length: *
+	down: nkmsldn
+		Start: 0
+		Length: *
+		
+parach:
+	open:
+		Start: 0
+		Length: 5
+	idle:
+		Start: 5
+		Length: 11
+
+parach-shadow:
+	idle: parach
+		Start: 0
+		Length: *

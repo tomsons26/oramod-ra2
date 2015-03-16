@@ -1,0 +1,27 @@
+pdplane:
+	Inherits: ^Helicopter
+	ParaDrop:
+		DropRange: 4c0
+		ChuteSound: chute1.aud	
+	Valued:
+		Cost: 10
+	Tooltip:
+		Name: Drop Pod
+	Plane:
+		CruiseAltitude: 2560
+		ROT: 5
+		Speed: 149
+		Repulsable: False
+		MaximumPitch: 56
+	Cargo:
+		MaxWeight: 5
+		PipCount: 2
+	Health:
+		HP: 60
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 5c0
+	RejectsOrders:
+	RenderVoxels:
+	WithVoxelBody:

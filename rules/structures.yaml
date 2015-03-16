@@ -244,6 +244,20 @@ amradr:
 	RenderBuilding:
 		Image: gaairc
 #	ParatroopersPower: # TODO
+	ParatroopersPower:
+		OrderName: SovietParatroopers
+#		Prerequisites: ~structures.allies
+		Icon: paratroopers
+		ChargeTime: 360
+		Description: Paratroopers
+		LongDesc: A Badger drops a squad of infantry\nanywhere on the map.
+		DropItems: E1,E1,E1,E2,E2
+		SelectTargetSound: slcttgt1.aud
+		AllowImpassableCells: false
+		QuantizedFacings: 8
+		CameraActor: camera.paradrop
+		DisplayBeacon: false
+		BeaconPoster: paraicon
 
 gaweap:
 	Inherits: ^Building
@@ -904,31 +918,48 @@ napsis:
 	Power:
 		Amount: -100
 
-# TODO: ngmisl.shp is not a valid shp
-# namisl:
-# 	Inherits: ^Building
-# 	Buildable:
-# 		Queue: Support
-# 		BuildPaletteOrder: 50
-# 		Prerequisites: ~natech, ~structures.soviets
-# 	Valued:
-# 		Cost: 5000
-# 	Tooltip:
-# 		Name: Nuclear Missile Silo
-# 		Description: Houses a nuclear warhead.
-# 	Building:
-# 		Footprint: xxx xxx xxx
-# 		Dimensions: 3, 3
-# 	Selectable:
-# 		Bounds: 82, 150, -1, -55
-# 	Health:
-# 		HP: 1000
-# 	Armor:
-# 		Type: Concrete
-# 	RevealsShroud:
-# 		Range: 4c0
-# 	Power:
-# 		Amount: -200
+namisl:
+ 	Inherits: ^Building
+	Buildable:
+ 		Queue: Support
+ 		BuildPaletteOrder: 50
+ 		Prerequisites: ~natech, ~structures.soviets
+ 	Valued:
+ 		Cost: 5000
+ 	Tooltip:
+ 		Name: Nuclear Missile Silo
+ 		Description: Houses a nuclear warhead.
+ 	Building:
+ 		Footprint: xxx xxx xxx
+ 		Dimensions: 3, 3
+ 	Selectable:
+ 		Bounds: 82, 150, -1, -55
+ 	Health:
+ 		HP: 1000
+ 	Armor:
+		Type: Concrete
+ 	RevealsShroud:
+ 		Range: 4c0
+ 	Power:
+ 		Amount: -200
+	NukePower:
+		Icon: clustermissile
+		ChargeTime: 540
+		Description: Cluster Missile
+		LongDesc: Launches a conventional warhead\nat a target location.
+		BeginChargeSound:
+		EndChargeSound: #00-i154.aud
+		SelectTargetSound:
+		InsufficientPowerSound:
+		IncomingSound: #00-i150.aud
+		LaunchSound: #icbm1.aud
+		MissileWeapon: ClusterMissile
+		SpawnOffset: 0,427,0
+		DisplayTimer: False
+		DisplayBeacon: True
+		DisplayRadarPing: True
+		BeaconPoster:
+		CameraActor: camera
 
 nairon:
 	Inherits: ^Building
