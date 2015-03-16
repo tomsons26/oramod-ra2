@@ -54,6 +54,15 @@
 	# TimedUpgradeBar:
 	# 	Upgrade: invulnerability
 	UpgradeManager:
+	UpgradeOverlay@IRONCURTAIN:
+		UpgradeTypes: invulnerability
+		UpgradeMinEnabledLevel: 1
+	InvulnerabilityUpgrade@IRONCURTAIN:
+		UpgradeTypes: invulnerability
+		UpgradeMinEnabledLevel: 1
+		UpgradeMaxAcceptedLevel: 2
+	TimedUpgradeBar:
+		Upgrade: invulnerability
 
 ^CivBuilding:
 	Inherits: ^Building
@@ -284,10 +293,21 @@
 		LightYaw: -150
 		LightAmbientColor: 0,0,0,0,0,0
 		LightDiffuseColor: 1,1,1
+	Chronoshiftable:
 	GainsStatUpgrades:
 	UpgradeManager:
+	UpgradeOverlay@IRONCURTAIN:
+		UpgradeTypes: invulnerability
+		UpgradeMinEnabledLevel: 1
+	InvulnerabilityUpgrade@IRONCURTAIN:
+		UpgradeTypes: invulnerability
+		UpgradeMinEnabledLevel: 1
+		UpgradeMaxAcceptedLevel: 2
+	TimedUpgradeBar:
+		Upgrade: invulnerability
 	MustBeDestroyed:
 # TODO: Soylet (for grinding)
+
 
 ^Aircraft:
 	AppearsOnRadar:

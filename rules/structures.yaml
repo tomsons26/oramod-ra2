@@ -502,20 +502,20 @@ gacsph:
 		Amount: -200
 	WithIdleOverlay:
 		Sequence: idle-dome
-	# ChronoshiftPower:
-	#	OrderName: Chronoshift
-		# TODO: find this: Icon: chroicon
-	#	ChargeTime: 300
-	#	Description: Chronoshift
-	#	LongDesc: Teleports a group of units across\nthe map.
-		# TODO: SelectTargetSound: slcttgt1.aud
-		# TODO: InsufficientPowerSound: nopowr1.aud
-		# TODO: BeginChargeSound: chrochr1.aud
-		# TODO: EndChargeSound: chrordy1.aud
-		# TODO: Was it timed? Duration: 20
-		# TODO: not all cargo types died: KillCargo: true
-	#	DisplayRadarPing: false
-		# TODO: Support rectangle selection, not radius-only: Range: 3x3
+	ChronoshiftPower@chronoshift:
+		OrderName: Chronoshift
+#		Prerequisites:
+		Icon: chrono
+		ChargeTime: 120
+		Description: Chronoshift
+		LongDesc: Teleports a group of units across\nthe map for 20 seconds.
+		SelectTargetSound: #slcttgt1.aud
+		InsufficientPowerSound: #nopowr1.aud
+		BeginChargeSound: #chrochr1.aud
+		EndChargeSound: #chrordy1.aud
+		Duration: 20
+		KillCargo: yes
+		DisplayRadarPing: True
 
 nacnst:
 	Inherits: ^Building
@@ -986,6 +986,18 @@ nairon:
 	Power:
 		Amount: -200
 # TODO: Iron Curtain ability
+	GrantUpgradePower@IRONCURTAIN:
+		Icon: invuln
+		ChargeTime: 120
+		Description: Invulnerability
+		LongDesc: Makes a group of units invulnerable\nfor 20 seconds.
+		Duration: 500
+		SelectTargetSound: #slcttgt1.aud
+		InsufficientPowerSound: #nopowr1.aud
+		BeginChargeSound: #ironchg1.aud
+		EndChargeSound: #ironrdy1.aud
+		DisplayRadarPing: True
+		Upgrades: invulnerability
 
 cafncb:
 	Inherits: ^Wall

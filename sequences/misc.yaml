@@ -17,6 +17,10 @@ overlay:
 	target-invalid: place
 		Start: 1
 		Offset: 0, -15
+	target-valid-snow: place
+		Start: 2
+	target-valid-temperat: place
+		Start: 0
 
 poweroff:
 	offline: poweroff
@@ -505,6 +509,10 @@ icon:
 	clustermissile: nukeicon
 		Start: 0
 	paratroopers: paraicon
+		Start: 0
+	invuln: ircricon
+		Start: 0
+	chrono: chroicon
 		Start: 0
 
 clustermissile:

@@ -42,6 +42,9 @@ engineer:
 		Start: 135
 		Length: 8
 		Tick: 80
+	die5: nukedie
+		Start: 0
+		Length: *
 	# Todo: add other die sequences
 	icon: engnicon
 		Start: 0
@@ -168,6 +171,9 @@ e1:
 	die2: gi
 		Start: 149
 		Length: 14
+	die5: nukedie
+		Start: 0
+		Length: *
 	die-crushed: death_c
 		Start: 0
 		Length: 4
@@ -207,6 +213,9 @@ e2:
 	die2: cons
 		Start: 149
 		Length: 14
+	die5: nukedie
+		Start: 0
+		Length: *
 	die-crushed: death_c
 		Start: 0
 		Length: 4
