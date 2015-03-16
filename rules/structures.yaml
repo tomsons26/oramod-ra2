@@ -1145,6 +1145,54 @@ nasam:
 	BodyOrientation:
 		QuantizedFacings: 8
 
+nayard:
+	Inherits: ^Building
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: Naval Yard
+		Description: Produces and repairs ships,\nsubmarines and transports.
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 50
+		Prerequisites: anypower, ~structures.soviet
+	TargetableBuilding:
+		TargetTypes: Ground, Water, C4
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4,4
+		Adjacent: 8
+		TerrainTypes: Water
+	-GivesBuildableArea:
+	Health:
+		HP: 1000
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 4c0
+	Exit@1:
+		SpawnOffset: 0,-213,0
+		Facing: 96
+		ExitCell: -1,2
+	Exit@2:
+		SpawnOffset: 0,-213,0
+		Facing: 160
+		ExitCell: 3,2
+	Production:
+		Produces: Ship, Submarine
+	PrimaryBuilding:
+	-EmitInfantryOnSell:
+	RepairsUnits:
+		FinishRepairingNotification: UnitRepaired
+	RallyPoint:
+	ProductionBar:
+	Power:
+		Amount: -30
+	WithIdleOverlay@crane:
+		Sequence: idle-crane
+	WithIdleOverlay@waves:
+		Sequence: idle-waves
+	
 anypower:
 	Tooltip:
 		Name: Power Plant

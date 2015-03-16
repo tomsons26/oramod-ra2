@@ -57,6 +57,7 @@ Rules:
 	./mods/ra2/rules/vehicles.yaml
 	./mods/ra2/rules/civilian.yaml
 	./mods/ra2/rules/trees.yaml
+	./mods/ra2/rules/ships.yaml
 
 Sequences:
 	./mods/ra2/sequences/aircraft.yaml
@@ -123,7 +124,8 @@ ChromeLayout:
 
 Weapons:
 	./mods/ra2/weapons.yaml
-
+	./mods/ra2/weapons/missiles.yaml
+	
 Voices:
 	./mods/ra2/voices.yaml
 

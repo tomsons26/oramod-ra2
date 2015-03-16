@@ -1054,3 +1054,36 @@ nasam:
 		Start: 0
 		Length: 8
 		ShadowStart: 8
+
+nayard:
+	idle: ngyard
+		Start: 0
+		Length: 1
+	damaged-idle: ngyard
+		Start: 1
+		Length: 1
+	idle-crane: ngyard_a
+		Start: 0
+		Length: 15
+		ShadowStart: 30
+		# UseTilsetCode: true # TODO: pchote/ts-snow
+	damaged-idle-crane: ngyard_a
+		Start: 30
+		Length: 15
+		ShadowStart: 45
+		# UseTilsetCode: true # TODO: pchote/ts-snow
+	idle-waves: ngyard_c
+		Start: 0
+		Length: 15
+		ShadowStart: 30
+		# UseTilsetCode: true # TODO: pchote/ts-snow
+	damaged-idle-waves: ngyard_c
+		Start: 30
+		Length: 15
+		ShadowStart: 30
+		# UseTilsetCode: true # TODO: pchote/ts-snow
+	make: ntyardmk
+		Start: 0
+		Length: 25
+	icon: yardicon
+		Start: 0

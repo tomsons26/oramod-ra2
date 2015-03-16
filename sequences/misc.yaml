@@ -155,7 +155,10 @@ explosion:
 		Length: *
 		Tick: 160
 		BlendMode: Additive
-	small_watersplash: h2o_exp2
+	small_watersplash: h2o_exp3
+		Start: 0
+		Length: *
+	medium_watersplash: h2o_exp2
 		Start: 0
 		Length: *
 	large_watersplash: h2o_exp1
@@ -297,9 +300,15 @@ flameall:
 
 #TODO: placeholder to fix crashes related to smoke
 smoke_m:
-	idle: fire3
+	idle: sgrysmk1
 		Start: 0
 		Length: *
+	
+durasmoke:
+	idle:
+		Start: 0
+		Length: *
+		ZOffset: 1023
 
 moveflsh:
 	idle: ring
@@ -522,6 +531,11 @@ clustermissile:
 	down: nkmsldn
 		Start: 0
 		Length: *
+		
+missile:
+	idle:
+		Start: 0
+		Facings: 32
 		
 parach:
 	open:

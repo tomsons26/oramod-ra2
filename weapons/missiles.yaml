@@ -1,0 +1,38 @@
+SubMissile:
+	ReloadDelay: 300
+	Range: 16c0
+	Burst: 2
+	Report: MISSILE6.AUD
+	Projectile: Bullet
+		Speed: 102
+		High: true
+		Angle: 165
+		Inaccuracy: 1c938
+		Image: missile
+		Trail: durasmoke
+		ContrailLength: 50
+	Warhead@1Dam: SpreadDamage
+		Spread: 426
+		Damage: 30
+		Falloff: 1000, 368, 135, 50, 18, 7, 0
+		DeathType: 3
+		Versus:
+			None: 25
+			Flak: 25
+			Plate: 25
+			Light: 75
+			Medium: 100
+			Heavy: 100
+			Wood: 65
+			Steel: 45
+			Concrete: 60
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: #Crater
+	Warhead@3Eff: CreateEffect
+		Explosion: #artillery_explosion
+		ImpactSound: kaboom15.aud
+		InvalidImpactTypes: Water
+	Warhead@4EffWater: CreateEffect
+		Explosion: large_splash
+		ImpactSound: splash9.aud
+		ValidImpactTypes: Water

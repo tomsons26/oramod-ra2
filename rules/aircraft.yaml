@@ -21,7 +21,6 @@ pdplane:
 	-Selectable:
 	Tooltip:
 		Name: Paratrooper Plane
-	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
 	RejectsOrders:

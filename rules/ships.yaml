@@ -1,0 +1,39 @@
+dred:
+	Inherits: ^Ship
+	Buildable:
+		Queue: Ship
+		BuildPaletteOrder: 110
+		Prerequisites: ~naval.soviets
+		BuildAtProductionType: Ship
+	Valued:
+		Cost: 3000
+	Tooltip:
+		Name: SINK THEM!
+		Description: CRUISE AND FIRE!
+	Selectable:
+	Health:
+		HP: 1000
+	Armor:
+		Type: Heavy
+	Mobile:
+		Speed: 85
+		ROT: 8
+		WaitAverage: 0
+		Crushes: crate
+	RevealsShroud:
+		Range: 4c0
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	Armament:
+		Weapon: SubMissile
+		LocalOffset: 0,-171,0, 0,171,0
+		FireDelay: 2
+	AttackFrontal:
+	Chronoshiftable:
+	RepairableNear:
+#	Explodes:
+#		Weapon: UnitExplodeShip
+#		EmptyWeapon: UnitExplodeShip
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelBody:

@@ -174,3 +174,9 @@ dpod:
 	
 pdplane:
 	idle: pdplane
+	
+dred:
+	idle: dred
+	
+dredwo:
+	idle: dredwo

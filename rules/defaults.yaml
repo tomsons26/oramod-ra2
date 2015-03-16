@@ -289,10 +289,11 @@
 		Weapon: UnitExplodeSmall
 		EmptyWeapon: UnitExplodeSmall
 	RenderVoxels:
-		LightPitch: 170
-		LightYaw: -150
-		LightAmbientColor: 0,0,0,0,0,0
-		LightDiffuseColor: 1,1,1
+		Scale: 11.7
+		LightYaw: 800
+		LightPitch: 110
+		LightAmbientColor: 0.3,0.3,0.3 # -0.5,-0.5,-0.5
+		LightDiffuseColor: 1.0,1.0,1.0 # 1.5,1.5,1.5
 	Chronoshiftable:
 	GainsStatUpgrades:
 	UpgradeManager:
@@ -344,7 +345,13 @@
 	GainsStatUpgrades:
 	UpgradeManager:
 	MustBeDestroyed:
-	
+	RenderVoxels:
+		Scale: 11.7
+		LightYaw: 800
+		LightPitch: 110
+		LightAmbientColor: 0.3,0.3,0.3 # -0.5,-0.5,-0.5
+		LightDiffuseColor: 1.0,1.0,1.0 # 1.5,1.5,1.5
+		
 ^OreDrill:
 	Tooltip:
 		Name: Ore Drill
@@ -422,7 +429,13 @@
 	Guardable:
 	UpgradeManager:
 	MustBeDestroyed:
-
+	RenderVoxels:
+		Scale: 11.7
+		LightYaw: 800
+		LightPitch: 110
+		LightAmbientColor: 0.3,0.3,0.3 # -0.5,-0.5,-0.5
+		LightDiffuseColor: 1.0,1.0,1.0 # 1.5,1.5,1.5
+		
 ^Plane:
 	AppearsOnRadar:
 		UseLocation: true
@@ -475,5 +488,70 @@
 		UpgradeMaxAcceptedLevel: 2
 	TimedUpgradeBar:
 		Upgrade: invulnerability
-	WithShadow:
 	MustBeDestroyed:
+	RenderVoxels:
+		Scale: 11.7
+		LightYaw: 800
+		LightPitch: 110
+		LightAmbientColor: 0.3,0.3,0.3 # -0.5,-0.5,-0.5
+		LightDiffuseColor: 1.0,1.0,1.0 # 1.5,1.5,1.5
+
+^Ship:
+	AppearsOnRadar:
+	Mobile:
+#		Crushes: crate
+		TerrainSpeeds:
+			Water: 100
+	SelectionDecorations:
+	Selectable:
+		Voice: Vehicle
+	TargetableUnit:
+		TargetTypes: Ground, Water, Repair
+	HiddenUnderFog:
+	AttackMove:
+	GainsExperience:
+	GivesExperience:
+	DrawLineToTarget:
+	ActorLostNotification:
+		Notification: NavalUnitLost
+	ProximityCaptor:
+		Types: Ship
+	GivesBounty:
+#	GpsDot:
+#		String: Ship
+	WithSmoke:
+	UpdatesPlayerStatistics:
+	CombatDebugOverlay:
+	Guard:
+	Guardable:
+	BodyOrientation:
+	Tooltip:
+		GenericName: Ship
+	Huntable:
+	ScriptTriggers:
+	GainsStatUpgrades:
+	SelfHealing@ELITE:
+		Step: 2
+		Ticks: 100
+		HealIfBelow: 1
+		DamageCooldown: 125
+		UpgradeTypes: selfheal
+		UpgradeMinEnabledLevel: 1
+	UpgradeManager:
+	UpgradeOverlay@IRONCURTAIN:
+		UpgradeTypes: invulnerability
+		UpgradeMinEnabledLevel: 1
+	InvulnerabilityUpgrade@IRONCURTAIN:
+		UpgradeTypes: invulnerability
+		UpgradeMinEnabledLevel: 1
+		UpgradeMaxAcceptedLevel: 2
+	TimedUpgradeBar:
+		Upgrade: invulnerability
+		UpgradeMinEnabledLevel: 1
+	MustBeDestroyed:
+	RenderVoxels:
+		Scale: 11.7
+		LightYaw: 800
+		LightPitch: 110
+		LightAmbientColor: 0.3,0.3,0.3 # -0.5,-0.5,-0.5
+		LightDiffuseColor: 1.0,1.0,1.0 # 1.5,1.5,1.5
